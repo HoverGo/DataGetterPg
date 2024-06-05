@@ -1,0 +1,439 @@
+{
+    "product": [
+        {
+            "maker": "B",
+            "model": "1121",
+            "type": "PC"
+        },
+        {
+            "maker": "A",
+            "model": "1232",
+            "type": "PC"
+        },
+        {
+            "maker": "A",
+            "model": "1233",
+            "type": "PC"
+        },
+        {
+            "maker": "E",
+            "model": "1260",
+            "type": "PC"
+        },
+        {
+            "maker": "A",
+            "model": "1276",
+            "type": "Printer"
+        },
+        {
+            "maker": "D",
+            "model": "1288",
+            "type": "Printer"
+        },
+        {
+            "maker": "A",
+            "model": "1298",
+            "type": "Laptop"
+        },
+        {
+            "maker": "C",
+            "model": "1321",
+            "type": "Laptop"
+        },
+        {
+            "maker": "A",
+            "model": "1401",
+            "type": "Printer"
+        },
+        {
+            "maker": "A",
+            "model": "1408",
+            "type": "Printer"
+        },
+        {
+            "maker": "D",
+            "model": "1433",
+            "type": "Printer"
+        },
+        {
+            "maker": "E",
+            "model": "1434",
+            "type": "Printer"
+        },
+        {
+            "maker": "B",
+            "model": "1750",
+            "type": "Laptop"
+        },
+        {
+            "maker": "A",
+            "model": "1752",
+            "type": "Laptop"
+        },
+        {
+            "maker": "E",
+            "model": "2113",
+            "type": "PC"
+        },
+        {
+            "maker": "E",
+            "model": "2112",
+            "type": "PC"
+        },
+        {
+            "maker": "B",
+            "model": "1414",
+            "type": "PC"
+        }
+    ],
+    "laptop": [
+        {
+            "code": 1,
+            "model": "1298",
+            "speed": 350,
+            "ram": 32,
+            "hd": 4.0,
+            "price": 700.0,
+            "screen": 11
+        },
+        {
+            "code": 2,
+            "model": "1321",
+            "speed": 500,
+            "ram": 64,
+            "hd": 8.0,
+            "price": 970.0,
+            "screen": 12
+        },
+        {
+            "code": 3,
+            "model": "1750",
+            "speed": 750,
+            "ram": 128,
+            "hd": 12.0,
+            "price": 1200.0,
+            "screen": 14
+        },
+        {
+            "code": 4,
+            "model": "1298",
+            "speed": 600,
+            "ram": 64,
+            "hd": 10.0,
+            "price": 1050.0,
+            "screen": 15
+        },
+        {
+            "code": 5,
+            "model": "1752",
+            "speed": 750,
+            "ram": 128,
+            "hd": 10.0,
+            "price": 1150.0,
+            "screen": 14
+        },
+        {
+            "code": 6,
+            "model": "1298",
+            "speed": 450,
+            "ram": 64,
+            "hd": 10.0,
+            "price": 950.0,
+            "screen": 12
+        }
+    ],
+    "pc": [
+        {
+            "code": 1,
+            "model": "1232",
+            "speed": 500,
+            "ram": 64,
+            "hd": 5.0,
+            "cd": "12x",
+            "price": 600.0
+        },
+        {
+            "code": 2,
+            "model": "1121",
+            "speed": 750,
+            "ram": 128,
+            "hd": 14.0,
+            "cd": "40x",
+            "price": 850.0
+        },
+        {
+            "code": 3,
+            "model": "1233",
+            "speed": 500,
+            "ram": 64,
+            "hd": 5.0,
+            "cd": "12x",
+            "price": 600.0
+        },
+        {
+            "code": 4,
+            "model": "1121",
+            "speed": 600,
+            "ram": 128,
+            "hd": 14.0,
+            "cd": "40x",
+            "price": 850.0
+        },
+        {
+            "code": 5,
+            "model": "1121",
+            "speed": 600,
+            "ram": 128,
+            "hd": 8.0,
+            "cd": "40x",
+            "price": 850.0
+        },
+        {
+            "code": 6,
+            "model": "1233",
+            "speed": 750,
+            "ram": 128,
+            "hd": 20.0,
+            "cd": "50x",
+            "price": 950.0
+        },
+        {
+            "code": 7,
+            "model": "1232",
+            "speed": 500,
+            "ram": 32,
+            "hd": 10.0,
+            "cd": "12x",
+            "price": 400.0
+        },
+        {
+            "code": 8,
+            "model": "1232",
+            "speed": 450,
+            "ram": 64,
+            "hd": 8.0,
+            "cd": "24x",
+            "price": 350.0
+        },
+        {
+            "code": 9,
+            "model": "1232",
+            "speed": 450,
+            "ram": 32,
+            "hd": 10.0,
+            "cd": "24x",
+            "price": 350.0
+        },
+        {
+            "code": 10,
+            "model": "1260",
+            "speed": 500,
+            "ram": 32,
+            "hd": 10.0,
+            "cd": "12x",
+            "price": 350.0
+        },
+        {
+            "code": 11,
+            "model": "1233",
+            "speed": 900,
+            "ram": 128,
+            "hd": 40.0,
+            "cd": "40x",
+            "price": 980.0
+        },
+        {
+            "code": 12,
+            "model": "1233",
+            "speed": 800,
+            "ram": 128,
+            "hd": 20.0,
+            "cd": "50x",
+            "price": 970.0
+        }
+    ],
+    "printer": [
+        {
+            "code": 1,
+            "model": "1276",
+            "color": "n",
+            "type": "Laser",
+            "price": 400.0
+        },
+        {
+            "code": 2,
+            "model": "1433",
+            "color": "y",
+            "type": "Jet",
+            "price": 270.0
+        },
+        {
+            "code": 3,
+            "model": "1434",
+            "color": "y",
+            "type": "Jet",
+            "price": 290.0
+        },
+        {
+            "code": 4,
+            "model": "1401",
+            "color": "n",
+            "type": "Matrix",
+            "price": 150.0
+        },
+        {
+            "code": 5,
+            "model": "1408",
+            "color": "n",
+            "type": "Matrix",
+            "price": 270.0
+        },
+        {
+            "code": 6,
+            "model": "1288",
+            "color": "n",
+            "type": "Laser",
+            "price": 400.0
+        }
+    ],
+    "reis": [
+        {
+            "kodreis": 1,
+            "airoport": "Внуково",
+            "price": 1500
+        },
+        {
+            "kodreis": 2,
+            "airoport": "Внуково",
+            "price": 3255
+        },
+        {
+            "kodreis": 3,
+            "airoport": "Домодедово",
+            "price": 3255
+        },
+        {
+            "kodreis": 4,
+            "airoport": "Домодедово",
+            "price": 1555
+        },
+        {
+            "kodreis": 5,
+            "airoport": "Шереметьево",
+            "price": 2222
+        },
+        {
+            "kodreis": 6,
+            "airoport": "Шереметьево",
+            "price": 1287
+        },
+        {
+            "kodreis": 7,
+            "airoport": "Рощино",
+            "price": 55555
+        },
+        {
+            "kodreis": 8,
+            "airoport": "Рощино",
+            "price": 15214
+        }
+    ],
+    "fly": [
+        {
+            "kod": 1,
+            "kodreis": 1,
+            "kodclient": 1,
+            "data": "2025-12-20"
+        },
+        {
+            "kod": 2,
+            "kodreis": 1,
+            "kodclient": 2,
+            "data": "2025-11-10"
+        },
+        {
+            "kod": 3,
+            "kodreis": 3,
+            "kodclient": 2,
+            "data": "2025-10-05"
+        },
+        {
+            "kod": 4,
+            "kodreis": 4,
+            "kodclient": 4,
+            "data": "2025-10-05"
+        },
+        {
+            "kod": 5,
+            "kodreis": 5,
+            "kodclient": 4,
+            "data": "2025-10-12"
+        },
+        {
+            "kod": 6,
+            "kodreis": 6,
+            "kodclient": 2,
+            "data": "2025-10-12"
+        },
+        {
+            "kod": 8,
+            "kodreis": 6,
+            "kodclient": 2,
+            "data": "2025-11-12"
+        },
+        {
+            "kod": 9,
+            "kodreis": 1,
+            "kodclient": 2,
+            "data": "2025-11-12"
+        },
+        {
+            "kod": 10,
+            "kodreis": 1,
+            "kodclient": 2,
+            "data": "2025-11-12"
+        },
+        {
+            "kod": 11,
+            "kodreis": 1,
+            "kodclient": 2,
+            "data": "2025-11-12"
+        },
+        {
+            "kod": 12,
+            "kodreis": 1,
+            "kodclient": 2,
+            "data": "2025-11-12"
+        },
+        {
+            "kod": 13,
+            "kodreis": 1,
+            "kodclient": 2,
+            "data": "2025-11-12"
+        },
+        {
+            "kod": 14,
+            "kodreis": 1,
+            "kodclient": 2,
+            "data": "2025-11-12"
+        }
+    ],
+    "pass": [
+        {
+            "kodclient": 1,
+            "username": "Чистяков"
+        },
+        {
+            "kodclient": 2,
+            "username": "Рыженков"
+        },
+        {
+            "kodclient": 3,
+            "username": "Садулоев"
+        },
+        {
+            "kodclient": 4,
+            "username": "Егоров"
+        }
+    ]
+}

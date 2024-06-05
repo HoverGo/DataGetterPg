@@ -24,16 +24,16 @@ def open_connection(dbname, user, password, host, port):
         return None
 
 
-def close_connection(conn) -> bool:
+def close_connection(conn):
     """
     Закрытие соединения с базой данных
 
     """
     try:
         conn.close()
-        return True
-    except:
-        return False
+        return "Соединение с базой данных закрыто"
+    except Exception as e:
+        return e
 
 
 def get_tablenames(cursor) -> list:
@@ -68,8 +68,9 @@ def get_data_from_tables(cursor, tablenames: list) -> dict:
 
     for tablename in tablenames:
         """
-        Получение всех строк из таблицы в базе данных
+        Выполнение инструкции по получению всех строк из таблицы в базе данных
         Каждый элемент является кортежем, который представляет собой одну строку из таблицы
+
         """
         cursor.execute(f"SELECT * FROM {tablename}")
         records = cursor.fetchall()
@@ -119,15 +120,16 @@ def main():
         print("Подключение к базе данных выполнено успешно")
 
         cursor = conn.cursor()
-
         tablenames = get_tablenames(cursor)
-
         all_data = get_data_from_tables(cursor, tablenames)
 
         write_tabledata_to_json_file("data.json", all_data)
 
-        close_connection(conn)
-        cursor.close()
+        # Закрытие курсора и соединения с базой данных по окончанию работы основного блока кода программы
+        if cursor:
+            cursor.close()
+        close_conn = close_connection(conn)
+        print(close_conn)
     else:
         print("Не удалось подключиться к базе данных")
 

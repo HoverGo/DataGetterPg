@@ -5,12 +5,6 @@ from decimal import Decimal
 
 
 def open_connection(dbname, user, password, host, port):
-    """
-
-    Подключение к базе данных
-    Для подключения необходимо ввести все входные данные
-
-    """
     try:
         conn = psycopg2.connect(
             dbname=dbname,
@@ -25,10 +19,6 @@ def open_connection(dbname, user, password, host, port):
 
 
 def close_connection(conn):
-    """
-    Закрытие соединения с базой данных
-
-    """
     try:
         conn.close()
         return "Соединение с базой данных закрыто"
@@ -38,12 +28,10 @@ def close_connection(conn):
 
 def get_tablenames(cursor) -> list:
     """
-    Обращание к информационной схеме базы данных для получения
+    Обращение к информационной схеме базы данных для получения
     названий всех таблиц
 
     """
-
-    # Выполнение SQL-инструкции
     cursor.execute(
         """
             SELECT table_name 
@@ -51,7 +39,6 @@ def get_tablenames(cursor) -> list:
             WHERE table_schema = 'public'
         """
     )
-    # Получение списка кортежей с названием всех таблиц в базе данных
     tablenames_data = cursor.fetchall()
 
     # т.к. вывод fetchall представляет собой кортеж, необходимо получить из него нулевой и едниственный элемент с названием таблицы
@@ -59,11 +46,7 @@ def get_tablenames(cursor) -> list:
     return tablenames
 
 
-def get_data_from_tables(cursor, tablenames: list) -> dict:
-    """
-    Получение данных из всех таблиц в базе данных
-
-    """
+def get_data_from_all_tables(cursor, tablenames: list) -> dict:
     all_data = {}
 
     for tablename in tablenames:
@@ -109,11 +92,6 @@ def decimal_default(obj):
 
 
 def main():
-    """
-    Основная функция для работы с программой
-
-    """
-
     conn = open_connection("computer", "postgres", "SideGame", "Localhost", "5432")
 
     if conn:
@@ -121,11 +99,10 @@ def main():
 
         cursor = conn.cursor()
         tablenames = get_tablenames(cursor)
-        all_data = get_data_from_tables(cursor, tablenames)
+        all_data = get_data_from_all_tables(cursor, tablenames)
 
         write_tabledata_to_json_file("data.json", all_data)
 
-        # Закрытие курсора и соединения с базой данных по окончанию работы основного блока кода программы
         if cursor:
             cursor.close()
         close_conn = close_connection(conn)
